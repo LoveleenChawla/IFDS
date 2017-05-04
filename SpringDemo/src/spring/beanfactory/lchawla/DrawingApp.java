@@ -8,6 +8,8 @@ public class DrawingApp {
 
 	public static void main(String[] args) {
 		@SuppressWarnings("resource")
+		//Fix02begins
+		//Fix02ends
 		ApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"spring.xml"});
 		BeanFactory factory = context;
 		Triangle triangle = (Triangle) factory.getBean("triangle");
