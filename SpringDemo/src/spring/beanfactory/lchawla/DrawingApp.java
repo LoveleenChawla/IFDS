@@ -7,6 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class DrawingApp {
 
 	public static void main(String[] args) {
+		@SuppressWarnings("resource")
 		ApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"spring.xml"});
 		BeanFactory factory = context;
 		Triangle triangle = (Triangle) factory.getBean("triangle");
